@@ -24,32 +24,30 @@ Additional materials such as slides, figures, and example notebooks may be inclu
 
 The table below outlines the course schedule and core topics covered throughout the term.
 
-| Session | Topic | Materials |
-|--------:|------|-----------|
-| 1 |  |  |
-| 2 |  |  |
-| 3 |  |  |
-| 4 |  |  |
-| 5 |  |  |
-| 6 |  |  |
-| 7 |  |  |
-| 8 |  |  |
-| 9 |  |  |
-| 10 |  |  |
-| 11 |  |  |
-| 12 |  |  |
-| 13 |  |  |
-| 14 |  |  |
-| 15 |  |  |
-| 16 |  |  |
-| 17 |  |  |
-| 18 |  |  |
-| 19 |  |  |
-| 20 |  |  |
-| 21 |  |  |
-| 22 |  |  |
-| 23 |  |  |
-| 24 |  |  |
+| Lecture Number | Topics | Clinical Correlate |
+|---------------:|--------|-------------------|
+| 1 | Course intro, course structure, how to approach this class, what is AI, four pillars, formulation of AI problems, history of AI until 1990 | Many |
+| 2 | Necessary math for AI: vectors, matrices, tensors, matrix operations, points and functions in n-dimensions, gradients, gradient descent; brief history of modern AI | Atrial fibrillation risk stratification (toy example) |
+| 3 | Loss functions; linear regression; loss surfaces; local vs global minima; MSE, cross-entropy; classification; ROC curves; logistic regression; AUROC; sensitivity & specificity; supervised vs unsupervised learning; Verifier’s Law | Predicting survival in COVID-19 patients |
+| 4 | Training: overfitting, cross-validation, gradient descent revisited, vanishing gradients, stochastic GD, hyperparameters, tuning, initialization, pretraining | AFib ablations with vs without AI (RCT) |
+| 5 | Data encodings (one-hot, numerical, thermometer); sampling bias; labeling (manual vs automatic); data augmentation; constraints of medical data | Predictors of diabetes; pneumonia prediction with augmentation; random CT windowing |
+| 6 | Neural networks: classical architectures, recurrent neural networks, autoencoders, generative adversarial networks (GANs) | — |
+| 8 | Case studies | Arrhythmia classification; age from X-ray; stroke prediction; synthetic bone MRI; PICU diagnosis classification |
+| 9 | Introduction to computer vision; radiology and dermatology applications; CNNs; transformer architectures | Dermatologic lesion classification |
+| 10 | Introduction to large language models and ChatGPT; transformers; prompting; text mining from clinical notes | Head & neck cancer prediction |
+| 11 | Guest lecture | Guest lecture |
+| 12 | Practicalities of ML: transfer learning, federated learning, hardware (GPU/TPU/ASIC), few-shot learning, infrastructure (Hugging Face, GitHub, arXiv) | Transfer learning for MR protocols |
+| 13 | AI in the clinic: EHRs, PACS, surgical robotics, FDA 510(k), real-time AI, clinical utility vs accuracy | EPIC Sepsis Model |
+| 14 | Project introduction | None |
+| 15 | Fairness and bias in medical AI: sources, metrics, case studies | Predicting race from chest X-ray |
+| 16 | Ethics of AI: data ownership, likeness generation, environmental impact; lecture and discussion | Gender classification |
+| 17 | Interpretable AI: SHAP, LIME, feature importance, saliency maps | Saliency maps for chest X-ray interpretation |
+| 18 | Guest lecture | Guest lecture |
+| 19 | AI superintelligence, AI consciousness, Chinese Room allegory; lecture and discussion | — |
+| 20 | Guest lecture | Guest lecture |
+| 21 | Sample AI rollout interactive case study | — |
+| 22 | AI limitations and failures: case studies | — |
+| 23 | Final project discussion (project due midnight before) | — |
 
 *(Topics and materials may evolve over time as the course is updated.)*
 
