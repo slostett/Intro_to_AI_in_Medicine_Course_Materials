@@ -1,7 +1,7 @@
-# Intro_to_AI_in_Medicine_Course_Materials
+# Intro to AI in Medicine Course Materials
 
 
-This repository contains the open-source course materials for **Introduction to AI in Medicine**, a course designed to introduce medical students to foundational concepts, tools, and applications of artificial intelligence in clinical and biomedical contexts.
+This repository contains the open-source course materials for **Introduction to AI in Medicine**, a course designed to introduce medical students with zero prior experience to foundational concepts, tools, and applications of artificial intelligence in clinical and biomedical contexts.
 
 The course emphasizes conceptual understanding over heavy technical prerequisites, focusing on how AI methods are developed, evaluated, and applied in real medical settings. Topics include data fundamentals, machine learning models, evaluation metrics, bias and ethics, real-world clinical use cases, and a simple mathematical basis for understanding the mechanisms of AI. These materials are intended for educational use and may be adapted for similar courses or self-study.
 
