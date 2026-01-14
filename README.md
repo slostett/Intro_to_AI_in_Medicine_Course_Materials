@@ -65,7 +65,7 @@ The table below outlines the course schedule and core topics covered throughout 
 
 - **Final Project Description**  
   Detailed guidelines for the course final project, including objectives, expectations, and deliverables.  
-  See: `final_project/`
+  See: `Final Project Deliverables.docx` and `Lecture Slides/Lec 12 Project Intro.pptx`
 
 Students are encouraged to explore clinically relevant questions using AI methods discussed in the course, with an emphasis on interpretability, evaluation, and real-world relevance.
 
@@ -75,7 +75,7 @@ Students are encouraged to explore clinically relevant questions using AI method
 
 Selected student final projects may be included in this repository for reference and educational purposes. Each project is contained in its own folder and typically includes a short description, code or analysis, and results.
 
-See: `student_projects/`
+See: `Student Final Project Examples/`
 
 ---
 
@@ -87,4 +87,4 @@ These materials are intended for educational use. They may be reused or adapted 
 
 ## Contact
 
-For questions about the course or materials, please contact the course instructor or repository maintainers.
+For questions about the course or materials, please contact stephenlostetter@yahoo.com.
