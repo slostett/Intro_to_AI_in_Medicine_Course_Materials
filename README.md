@@ -24,7 +24,8 @@ Additional materials such as slides, figures, and example notebooks may be inclu
 
 The table below outlines the course schedule and core topics covered throughout the term.
 
-How to use:
+**How to use:**
+
 Assignments Column: Homework for each lecture. Students were told to review these links and be ready to discuss during lecture.
 
 Clinical Correlate: Papers or other clinical applications of AI discussing more in-depth in class. No need to read these before lecture.
