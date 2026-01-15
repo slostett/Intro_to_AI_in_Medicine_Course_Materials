@@ -97,3 +97,134 @@ These materials are intended for educational use. They may be reused or adapted 
 ## Contact
 
 For questions about the course or materials, please contact stephenlostetter@yahoo.com.
+
+---
+## Works Cited
+
+### Academic Papers & Articles
+
+Banerjee, I., et al. "Reading Race: AI Recognises Patient's Racial Identity in Medical Images." *The Lancet Digital Health*, vol. 4, no. 6, 2022, https://www.thelancet.com/journals/landig/article/PIIS2589-7500(22)00063-2/fulltext.
+
+Buolamwini, J., and Gebru, T. "Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification." *MIT News*, 11 Feb. 2018, https://news.mit.edu/2018/study-finds-gender-skin-type-bias-artificial-intelligence-systems-0212.
+
+Esteva, A., et al. "Dermatologist-Level Classification of Skin Cancer with Deep Neural Networks." *Nature*, vol. 542, 2017, pp. 115-118, https://www.nature.com/articles/nature21056.
+
+Hannun, A. Y., et al. "Cardiologist-Level Arrhythmia Detection and Classification in Ambulatory Electrocardiograms Using a Deep Neural Network." *Nature Medicine*, vol. 25, 2019, pp. 65-69, https://www.nature.com/articles/s41591-018-0268-3.
+
+Hannun, A. Y., et al. "Cardiologist-Level Arrhythmia Detection with Convolutional Neural Networks." *Nature Medicine*, vol. 25, 2019, https://www.nature.com/articles/s41591-018-0306-1.
+
+Heaven, W. D. "Google's Medical AI Was Super Accurate in a Lab. Real Life Was a Different Story." *MIT Technology Review*, 27 Apr. 2020, https://www.technologyreview.com/2020/04/27/1000658/google-medical-ai-accurate-lab-real-life-clinic-covid-diabetes-retina-disease/.
+
+Heaven, W. D. "Five Ways That AI Is Learning to Improve Itself." *MIT Technology Review*, 6 Aug. 2025, https://www.technologyreview.com/2025/08/06/1121193/five-ways-that-ai-is-learning-to-improve-itself/.
+
+Johnson, A. E. W., et al. "A Comparative Analysis of Sepsis Identification Methods in an Electronic Database." *JAMA Internal Medicine*, vol. 178, no. 11, 2018, pp. 1447-1453, https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2781307.
+
+Kather, J. N., et al. "Head and Neck Cancer Prediction with Deep Learning." arXiv:2407.07296, 2024, https://arxiv.org/pdf/2407.07296.
+
+Lipton, Z. C., et al. "Learning to Diagnose with LSTM Recurrent Neural Networks." arXiv:1511.03677, 2015, https://arxiv.org/pdf/1511.03677.
+
+Lundberg, S. M., et al. "Explainable Machine-Learning Predictions for the Prevention of Hypoxaemia During Surgery." *Nature Biomedical Engineering*, vol. 6, 2022, pp. 749-760, https://www.nature.com/articles/s42256-022-00536-x.
+
+Moor, M., et al. "Foundation Models for Generalist Medical Artificial Intelligence." *Nature*, vol. 616, 2023, pp. 259-265, https://www.nature.com/articles/s41591-025-03517-w.
+
+Raghu, M., et al. "Transfusion: Understanding Transfer Learning for Medical Imaging." *PMC*, 2019, https://pmc.ncbi.nlm.nih.gov/articles/PMC8321322/.
+
+Rajpurkar, P., et al. "AI in Health and Medicine." *Nature Communications*, 2022, https://www.nature.com/articles/s43856-022-00220-6.
+
+Schwab, P., et al. "Predicting Race and Ethnicity from Medical Images." *MIT News*, 20 May 2022, https://news.mit.edu/2022/artificial-intelligence-predicts-patients-race-from-medical-images-0520.
+
+Singh, A., et al. "Synthetic Bone MRI Generation Using Deep Learning." *European Radiology*, 2025, https://link.springer.com/article/10.1007/s00330-025-11644-8.
+
+"Study: Widely Used AI Tool for Early Sepsis Detection May Be Cribbing Doctors' Suspicions." *University of Michigan News*, https://news.umich.edu/widely-used-ai-tool-for-early-sepsis-detection-may-be-cribbing-doctors-suspicions/.
+
+Wang, S., et al. "Predicting Stroke Using Machine Learning." *Scientific Reports*, vol. 14, 2024, https://www.nature.com/articles/s41598-024-82931-5.
+
+Yadav, S., et al. "Predictors of Type 2 Diabetes Using Machine Learning." *Scientific Reports*, vol. 14, 2024, https://www.nature.com/articles/s41598-024-52023-5.
+
+Yan, Y., et al. "COVID-19 Survival Prediction Using Machine Learning." *BMC Medical Informatics and Decision Making*, vol. 20, 2020, https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-020-01316-6.
+
+Zhao, J., et al. "LLM Interpretability: A Survey on Explanation Methods." *ACL Anthology*, 2024, https://aclanthology.org/2024.acl-long.470.pdf.
+
+### Books & Book Chapters
+
+Barocas, S., Hardt, M., and Narayanan, A. *Fairness and Machine Learning: Limitations and Opportunities*. MIT Press, 2023, https://www.fairmlbook.org/pdf/fairmlbook.pdf.
+
+Müller, V. C., and Bostrom, N. "Future Progress in Artificial Intelligence: A Survey of Expert Opinion." *Minds and Machines*, vol. 28, 2018, pp. 555-572, https://link.springer.com/article/10.1007/s11023-018-9482-5.
+
+### Interactive Demos & Educational Tools
+
+"3Blue1Brown: Neural Networks." *3Blue1Brown*, https://www.3blue1brown.com/lessons/neural-networks.
+
+"CNN Explainer: Learn Convolutional Neural Networks." *Georgia Tech Polo Club*, https://poloclub.github.io/cnn-explainer/.
+
+"Classification: Thresholding." *Google Machine Learning Crash Course*, https://developers.google.com/machine-learning/crash-course/classification/thresholding.
+
+"Convolutional Neural Networks for Visual Recognition." *Stanford University*, http://vision.stanford.edu/teaching/cs231n-demos/linear-classify/.
+
+"Embedding Projector." *TensorFlow*, https://projector.tensorflow.org/.
+
+"ELIZA - A Computer Program for the Study of Natural Language Communication." *NJIT*, https://web.njit.edu/~ronkowit/eliza.html.
+
+"Gradient Descent Visualizer." *UCLA ACM*, https://uclaacm.github.io/gradient-descent-visualiser/#playground.
+
+"Linear Regression." *MLU-Explain*, https://mlu-explain.github.io/linear-regression/.
+
+"Logistic Regression." *MLU-Explain*, https://mlu-explain.github.io/logistic-regression/.
+
+"Loss Functions and Optimization." *Google Machine Learning Crash Course*, https://developers.google.com/machine-learning/crash-course/linear-regression/loss.
+
+"Matrix Multiplication." *Math Is Fun*, https://www.mathsisfun.com/algebra/matrix-multiplying.html.
+
+"Matrix Multiplication Demo." *Matrix Multiplication Visualizer*, http://matrixmultiplication.xyz/.
+
+"Matrix Multiplication Worksheet." *Kuta Software*, https://cdn.kutasoftware.com/Worksheets/Alg2/Matrix%20Multiplication.pdf.
+
+"MNIST Demo and Tutorial." *DeepLizard*, https://deeplizard.com/resource/pavq7noze2.
+
+"Neural Networks." *MLU-Explain*, https://mlu-explain.github.io/neural-networks/.
+
+"ROC Curves and AUC Explained." *MLU-Explain*, https://mlu-explain.github.io/roc-auc/.
+
+"TensorFlow Playground." *TensorFlow*, https://playground.tensorflow.org/.
+
+"Transformer Explainer." *Georgia Tech Polo Club*, https://poloclub.github.io/transformer-explainer/.
+
+"Word Embedding Demo." *Carnegie Mellon University*, https://www.cs.cmu.edu/~dst/WordEmbeddingDemo/tutorial.html.
+
+### Code Examples & Notebooks
+
+Borsuk, M. "CNN Pneumonia Classification." *Google Colab*, https://colab.research.google.com/github/M-Borsuk/CNN-Pneumonia-Classification/blob/main/PneumoniaScansCNN.ipynb.
+
+"Lesson 1: X-Ray Images Classification." *MD.ai*, https://colab.research.google.com/github/mdai/ml-lessons/blob/master/lesson1-xray-images-classification.ipynb.
+
+### Articles & Blog Posts
+
+Karpathy, A. "A Recipe for Training Neural Networks." *Andrej Karpathy Blog*, 25 Apr. 2019, https://karpathy.github.io/2019/04/25/recipe/.
+
+"1D CNNs for Wordle Best Guess." *Mind the Gap Blog*, https://mindthegapblog.com/posts/wordle-solver-ai-cnn/.
+
+"CT Windowing as Data Augmentation." arXiv:2510.08116, 2024, https://arxiv.org/pdf/2510.08116.
+
+"Overfitting and Underfitting in Machine Learning." *Flitto DataLab*, https://datalab.flitto.com/en/company/blog/what-is-underfitting-and-overfitting-easy-example/.
+
+"What Are the Types of Bias in AI?" *Chapman University*, https://www.chapman.edu/ai/bias-in-ai.aspx.
+
+### Video Content
+
+"Entropy and Information Theory." *YouTube*, https://youtu.be/5eqRuVp65eY.
+
+"Logistic Regression and Maximum Likelihood." *YouTube*, https://www.youtube.com/watch?v=EKm0spFxFG4.
+
+"The Race for AI Superintelligence." *YouTube*, https://www.youtube.com/watch?v=5KVDDfAkRgc.
+
+### Research & Development Platforms
+
+"Anthropic Research: Reward Tampering." *Anthropic*, https://www.anthropic.com/research/reward-tampering.
+
+"arXiv.org Medical Research." *arXiv*, https://arxiv.org/search/?query=medical&searchtype=all&source=header.
+
+"GitHub Medical Repositories." *GitHub*, https://github.com/search?q=medical&type=repositories.
+
+"Hugging Face." *Hugging Face*, https://huggingface.co/.
+
+"Hugging Face Papers - Medical." *Hugging Face*, https://huggingface.co/papers/trending?q=medical.
