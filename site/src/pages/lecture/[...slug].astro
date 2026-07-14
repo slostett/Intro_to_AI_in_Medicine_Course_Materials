@@ -1,0 +1,178 @@
+---
+import Base from '../../layouts/Base.astro';
+import lectures from '../../content/lectures/lectures.json';
+
+export async function getStaticPaths() {
+  const sorted = [...lectures].sort((a, b) => a.number - b.number);
+  return sorted.map(lecture => ({
+    params: { slug: String(lecture.number) },
+  }));
+}
+
+const slug = Astro.params.slug;
+const lectureNum = parseInt(slug, 10);
+const allLectures = [...lectures].sort((a, b) => a.number - b.number);
+const lecture = allLectures.find(l => l.number === lectureNum);
+
+if (!lecture) {
+  return Astro.redirect('/syllabus');
+}
+
+const idx = allLectures.indexOf(lecture);
+const prevLecture = idx > 0 ? allLectures[idx - 1] : null;
+const nextLecture = idx < allLectures.length - 1 ? allLectures[idx + 1] : null;
+
+const filterLinks = (links: Array<{ label: string; url: string }>) =>
+  links.filter(l => l.url && l.url !== '');
+---
+
+<Base
+  title={`Lecture ${lecture.number}: ${lecture.title}`}
+  description={`Topics: ${lecture.topics.join(', ')}.`}
+>
+
+  <section class="section-band">
+    <div class="content-col reveal-on-scroll">
+      <p class="section-label">Lecture {String(lecture.number).padStart(2, '0')}</p>
+      <h1>{lecture.title}</h1>
+    </div>
+  </section>
+
+  {/* Topics */}
+  <section class="section-band-alt">
+    <div class="content-col reveal-on-scroll">
+      <h3 class="mb-6">Topics</h3>
+      <ul class="space-y-3">
+        {lecture.topics.map(topic => (
+          <li class="flex items-start gap-3 text-[17px] text-ink-secondary">
+            <span class="mt-2 w-1.5 h-1.5 rounded-full bg-ink-secondary/50 flex-shrink-0"></span>
+            <span>{topic}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  {/* Resource clusters */}
+  <section class="section-band">
+    <div class="content-col space-y-16">
+
+      {/* Clinical Correlate */}
+      {filterLinks(lecture.clinicalCorrelate).length > 0 && (
+        <div class="reveal-on-scroll">
+          <h3 class="mb-6">Clinical Correlate</h3>
+          <div class="link-group-clinical link-cluster space-y-3">
+            {filterLinks(lecture.clinicalCorrelate).map(link => (
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-[15px] text-ink no-underline hover:text-accent transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Assignments */}
+      {filterLinks(lecture.assignments).length > 0 && (
+        <div class="reveal-on-scroll">
+          <h3 class="mb-6">Assignments</h3>
+          <p class="text-[15px] text-ink-secondary mb-4">
+            Review these before lecture. Be ready to discuss.
+          </p>
+          <div class="link-group-assignment link-cluster space-y-3">
+            {filterLinks(lecture.assignments).map(link => (
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-[15px] text-ink no-underline hover:text-accent transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Supplemental */}
+      {filterLinks(lecture.supplemental).length > 0 && (
+        <div class="reveal-on-scroll">
+          <h3 class="mb-6">Supplemental Material</h3>
+          <div class="link-group-supplemental link-cluster space-y-3">
+            {filterLinks(lecture.supplemental).map(link => (
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-[15px] text-ink no-underline hover:text-accent transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Slides */}
+      {lecture.slideFile && (
+        <div class="reveal-on-scroll">
+          <h3 class="mb-6">Slides</h3>
+          <a
+            href={'/' + lecture.slideFile}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 border border-rule text-ink px-5 py-2.5 rounded-full text-[15px] no-underline hover:border-ink transition-colors"
+          >
+            Download Slides ↗
+          </a>
+        </div>
+      )}
+
+    </div>
+  </section>
+
+  {/* Prev/Next navigation */}
+  <section class="section-band-alt">
+    <div class="content-col">
+      <div class="flex items-center justify-between gap-8">
+        {prevLecture ? (
+          <a
+            href={`/lecture/${prevLecture.number}`}
+            class="group flex items-center gap-3 no-underline max-w-[45%]"
+          >
+            <svg class="w-5 h-5 text-rule group-hover:text-accent transition-colors flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+            <div>
+              <p class="text-xs text-ink-secondary uppercase tracking-widest">Previous</p>
+              <p class="text-[15px] font-medium text-ink group-hover:text-accent transition-colors">
+                Lecture {prevLecture.number}: {prevLecture.title}
+              </p>
+            </div>
+          </a>
+        ) : <div />}
+        {nextLecture ? (
+          <a
+            href={`/lecture/${nextLecture.number}`}
+            class="group flex items-center justify-end gap-3 no-underline max-w-[45%] ml-auto"
+          >
+            <div class="text-right">
+              <p class="text-xs text-ink-secondary uppercase tracking-widest">Next</p>
+              <p class="text-[15px] font-medium text-ink group-hover:text-accent transition-colors">
+                Lecture {nextLecture.number}: {nextLecture.title}
+              </p>
+            </div>
+            <svg class="w-5 h-5 text-rule group-hover:text-accent transition-colors flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        ) : <div />}
+      </div>
+    </div>
+  </section>
+
+</Base>

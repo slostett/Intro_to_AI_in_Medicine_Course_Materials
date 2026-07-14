@@ -1,0 +1,91 @@
+---
+import Base from '../layouts/Base.astro';
+import { resources } from '../data/resources';
+
+interface Group {
+  label: string;
+  icon: string;
+  items: typeof resources;
+}
+
+const typeLabels: Record<string, { label: string; icon: string }> = {
+  paper: { label: 'Academic Papers', icon: '📄' },
+  book: { label: 'Books', icon: '📚' },
+  demo: { label: 'Interactive Demos', icon: '🖥️' },
+  notebook: { label: 'Notebooks', icon: '📓' },
+  video: { label: 'Videos', icon: '▶️' },
+  platform: { label: 'Platforms & Tools', icon: '⚙️' },
+};
+
+const groups: Group[] = Object.entries(typeLabels).map(([type, { label, icon }]) => ({
+  label,
+  icon,
+  items: resources.filter(r => r.type === type),
+})).filter(g => g.items.length > 0);
+---
+
+<Base
+  title="Resources — Introduction to AI in Medicine"
+  description="Works cited, tools, and supplemental resources for the course."
+>
+
+  <section class="section-band">
+    <div class="content-col reveal-on-scroll">
+      <p class="section-label">Resources</p>
+      <h1>Works Cited &<br/>Supplemental Materials</h1>
+      <p class="mt-6 text-lg text-ink-secondary max-w-2xl leading-relaxed">
+        Every resource referenced throughout the course, grouped by type.
+        External links open in a new tab.
+      </p>
+    </div>
+  </section>
+
+  {groups.map((group, gi) => (
+    <section class={`${gi % 2 === 0 ? '' : 'section-band-alt'} section-band ${gi === 0 ? 'pt-0' : ''}`}>
+      <div class="content-col">
+        <h2 class="mb-10">{group.label}</h2>
+        <div class="space-y-4">
+          {group.items.map(item => (
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group block border-b border-rule pb-4 no-underline"
+            >
+              <div class="flex items-baseline justify-between gap-4">
+                <div class="min-w-0 flex-1">
+                  <p class="text-[17px] font-medium text-ink leading-snug group-hover:text-accent transition-colors">
+                    {item.title}
+                  </p>
+                  {item.authors && (
+                    <p class="mt-1 text-[15px] text-ink-secondary">
+                      {item.authors}
+                      {item.publication && `, ${item.publication}`}
+                      {item.year && `, ${item.year}`}
+                    </p>
+                  )}
+                  {!item.authors && item.publication && (
+                    <p class="mt-1 text-[15px] text-ink-secondary">
+                      {item.publication}
+                      {item.year && `, ${item.year}`}
+                    </p>
+                  )}
+                </div>
+                <svg
+                  class="w-4 h-4 text-rule flex-shrink-0 group-hover:text-accent transition-colors mt-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+</Base>

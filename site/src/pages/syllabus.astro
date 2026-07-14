@@ -1,0 +1,98 @@
+---
+import Base from '../layouts/Base.astro';
+import lectures from '../content/lectures/lectures.json';
+
+const allLectures = [...lectures].sort((a, b) => a.number - b.number);
+---
+
+<Base
+  title="Syllabus — Introduction to AI in Medicine"
+  description="23 lectures covering AI fundamentals, clinical applications, ethics, and a final project."
+>
+
+  <section class="section-band">
+    <div class="content-col reveal-on-scroll">
+      <p class="section-label">Course Schedule</p>
+      <h1>Syllabus</h1>
+      <p class="mt-6 text-lg text-ink-secondary max-w-2xl leading-relaxed">
+        {allLectures.length} lectures. Each entry links to assignments to review before class,
+        clinical papers discussed in lecture, and supplemental material for further exploration.
+      </p>
+    </div>
+  </section>
+
+  <!-- Lecture list -->
+  <section class="section-band-alt">
+    <div class="content-col space-y-0">
+      {allLectures.map((lecture) => {
+        const showGap = lecture.number === 8;
+        return (
+          <>
+            {showGap && (
+              <div class="py-8 text-center text-sm text-ink-secondary">
+                <span class="inline-block border-t border-rule pt-8 px-4">Lecture 7 is not scheduled this term</span>
+              </div>
+            )}
+            <a
+              href={`/lecture/${lecture.number}`}
+              class="group block border-b border-rule py-10 md:py-12 no-underline reveal-on-scroll"
+            >
+              <div class="flex items-baseline gap-4 md:gap-6">
+                <span class="lecture-number flex-shrink-0 w-8 text-right">
+                  {String(lecture.number).padStart(2, '0')}
+                </span>
+                <div class="min-w-0 flex-1">
+                  <h3 class="text-xl md:text-[1.5rem] font-semibold text-ink tracking-tighter group-hover:text-accent transition-colors leading-tight">
+                    {lecture.title}
+                  </h3>
+                  {lecture.topics.length > 0 && (
+                    <p class="mt-2 text-[15px] text-ink-secondary line-clamp-2">
+                      {lecture.topics.join(' · ')}
+                    </p>
+                  )}
+                  {/* Link indicators */}
+                  <div class="mt-3 flex flex-wrap gap-x-6 gap-y-1">
+                    {lecture.assignments.length > 0 && lecture.assignments.some(a => a.url && a.url !== '') && (
+                      <span class="text-xs text-accent inline-flex items-center gap-1">
+                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-accent"></span>
+                        Assignment{lecture.assignments.length > 1 ? 's' : ''}
+                      </span>
+                    )}
+                    {lecture.clinicalCorrelate.length > 0 && lecture.clinicalCorrelate.some(c => c.url && c.url !== '') && (
+                      <span class="text-xs text-emerald-600 inline-flex items-center gap-1">
+                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                        Clinical Correlate{lecture.clinicalCorrelate.length > 1 ? 's' : ''}
+                      </span>
+                    )}
+                    {lecture.supplemental.length > 0 && lecture.supplemental.some(s => s.url && s.url !== '') && (
+                      <span class="text-xs text-ink-secondary inline-flex items-center gap-1">
+                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-ink-secondary"></span>
+                        Supplemental
+                      </span>
+                    )}
+                    {lecture.slideFile && (
+                      <span class="text-xs text-ink-secondary inline-flex items-center gap-1">
+                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-ink-secondary/50"></span>
+                        Slides
+                      </span>
+                    )}
+                  </div>
+                </div>
+                <svg
+                  class="w-5 h-5 text-rule flex-shrink-0 group-hover:text-accent transition-colors hidden sm:block"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </a>
+          </>
+        );
+      })}
+    </div>
+  </section>
+
+</Base>

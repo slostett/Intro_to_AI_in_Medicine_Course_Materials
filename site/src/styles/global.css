@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base ─────────────────────────────────────────── */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  /* Huge tight headlines — the Apple signature */
+  h1 {
+    @apply text-ink font-semibold tracking-tightest;
+    font-size: clamp(2.25rem, 5vw + 0.5rem, 4rem);
+    line-height: 1.08;
+  }
+
+  h2 {
+    @apply text-ink font-semibold tracking-tighter;
+    font-size: clamp(1.75rem, 3vw + 0.5rem, 2.75rem);
+    line-height: 1.12;
+  }
+
+  h3 {
+    @apply text-ink font-semibold tracking-tighter;
+    font-size: clamp(1.25rem, 2vw + 0.3rem, 1.75rem);
+    line-height: 1.18;
+  }
+
+  /* Links — accent only, no underline by default */
+  a {
+    @apply text-accent underline-offset-4 transition-colors duration-150;
+  }
+  a:hover {
+    @apply opacity-80;
+  }
+
+  /* External link indicator */
+  a[rel~="external"]::after {
+    content: " ↗";
+    @apply text-ink-secondary text-xs;
+    vertical-align: super;
+  }
+
+  /* Focus visible — clean, no default outline */
+  :focus-visible {
+    @apply outline-2 outline-accent outline-offset-2 rounded-sm;
+  }
+
+  /* Selection */
+  ::selection {
+    @apply bg-accent/20;
+  }
+}
+
+/* ── Components ────────────────────────────────────── */
+
+@layer components {
+  /* Full-bleed section band — Apple rhythm */
+  .section-band {
+    @apply px-6 py-20 md:py-28 lg:py-32;
+  }
+
+  .section-band-alt {
+    @apply bg-paper-alt section-band;
+  }
+
+  /* Content column */
+  .content-col {
+    @apply max-w-content mx-auto;
+  }
+
+  /* Lectures list link cluster */
+  .link-cluster {
+    @apply flex flex-col gap-2;
+  }
+  .link-cluster a {
+    @apply text-[15px] leading-snug inline-flex items-center gap-2;
+  }
+
+  /* Left-border accent on link categories */
+  .link-group-clinical {
+    @apply border-l-2 border-emerald-500 pl-4;
+  }
+  .link-group-assignment {
+    @apply border-l-2 border-accent pl-4;
+  }
+  .link-group-supplemental {
+    @apply border-l-2 border-ink-secondary pl-4;
+  }
+
+  /* Lecture number — tabular, large */
+  .lecture-number {
+    @apply font-semibold text-ink-secondary tabular-nums;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+  }
+
+  /* Section label (above h2) */
+  .section-label {
+    @apply text-ink-secondary text-sm font-medium uppercase tracking-widest mb-4;
+  }
+}
+
+/* ── Motion (CSS-only, respects prefers-reduced-motion) ── */
+
+@layer utilities {
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      .reveal-on-scroll {
+        animation: reveal-fade-in linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 30%;
+      }
+    }
+  }
+}
+
+@keyframes reveal-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

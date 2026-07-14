@@ -1,0 +1,109 @@
+---
+import Base from '../layouts/Base.astro';
+import lectures from '../content/lectures/lectures.json';
+
+const lectureCount = lectures.length;
+---
+
+<Base title="Introduction to AI in Medicine — Course Materials">
+
+  <!-- Hero section -->
+  <section class="section-band">
+    <div class="content-col reveal-on-scroll">
+      <p class="section-label">Open-Source Course Materials</p>
+      <h1>Introduction to<br/>AI in Medicine</h1>
+      <p class="mt-8 text-lg md:text-xl text-ink-secondary max-w-2xl leading-relaxed">
+        A course designed to introduce medical students with zero prior experience to foundational concepts,
+        tools, and applications of artificial intelligence in clinical and biomedical contexts.
+      </p>
+      <div class="mt-12 flex flex-wrap gap-6">
+        <a href="/syllabus" class="inline-flex items-center gap-2 bg-ink text-paper px-6 py-3 rounded-full text-[15px] font-medium no-underline hover:bg-ink/80 transition-colors">
+          View Syllabus
+        </a>
+        <a
+          href="https://github.com/slostett/Intro_to_AI_in_Medicine_Course_Materials"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 border border-rule text-ink px-6 py-3 rounded-full text-[15px] font-medium no-underline hover:border-ink transition-colors"
+        >
+          GitHub Repository ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- At a glance -->
+  <section class="section-band-alt">
+    <div class="content-col reveal-on-scroll">
+      <p class="section-label">At a Glance</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mt-12">
+        <div>
+          <p class="text-3xl font-semibold text-ink tabular-nums tracking-tighter">{lectureCount}</p>
+          <p class="mt-2 text-[15px] text-ink-secondary">Lectures covering the full landscape of AI in medicine</p>
+        </div>
+        <div>
+          <p class="text-3xl font-semibold text-ink tabular-nums tracking-tighter">4</p>
+          <p class="mt-2 text-[15px] text-ink-secondary">Pillars — data, models, evaluation, and clinical integration</p>
+        </div>
+        <div>
+          <p class="text-3xl font-semibold text-ink tabular-nums tracking-tighter">1</p>
+          <p class="mt-2 text-[15px] text-ink-secondary">Final project with real clinical questions</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pedagogical approach -->
+  <section class="section-band">
+    <div class="content-col reveal-on-scroll">
+      <p class="section-label">Approach</p>
+      <h2>Conceptual understanding<br/>over technical prerequisites</h2>
+      <div class="mt-10 max-w-2xl space-y-6 text-[17px] text-ink-secondary leading-relaxed">
+        <p>
+          This course focuses on how AI methods are developed, evaluated, and applied in real medical settings —
+          not on deriving equations from scratch. You'll learn to think critically about AI systems, understand
+          their strengths and limitations, and recognize when they add genuine clinical value.
+        </p>
+        <p>
+          Topics range from data fundamentals and machine learning models to evaluation metrics, bias and ethics,
+          real-world clinical use cases, and the mathematical basis for understanding AI mechanisms.
+        </p>
+        <p>
+          The course includes interactive demos, clinical case studies, guest lectures from practitioners,
+          and a final project where you explore a clinically relevant question using AI methods.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillars diagram -->
+  <section class="section-band-alt">
+    <div class="content-col reveal-on-scroll">
+      <p class="section-label">Framework</p>
+      <h2>Four Pillars of AI in Medicine</h2>
+      <p class="mt-6 text-[17px] text-ink-secondary max-w-2xl leading-relaxed">
+        A high-level conceptual diagram outlining the core components required for building and evaluating
+        AI systems in medical contexts: data, models, evaluation, and clinical integration.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a
+          href="/4%20pillars%20diagram%20empty.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 border border-rule text-ink px-5 py-2.5 rounded-full text-[15px] no-underline hover:border-ink transition-colors"
+        >
+          Diagram (Blank) ↗
+        </a>
+        <a
+          href="/4%20pillars%20diagram%20filled%20out.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 border border-rule text-ink px-5 py-2.5 rounded-full text-[15px] no-underline hover:border-ink transition-colors"
+        >
+          Diagram (Filled) ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+</Base>

@@ -1,0 +1,395 @@
+[
+  {
+    "number": 1,
+    "title": "Course Introduction & What Is AI",
+    "topics": [
+      "Course intro, course structure, how to approach this class",
+      "What is AI",
+      "Four pillars of AI in medicine",
+      "Formulation of AI problems",
+      "History of AI until 1990"
+    ],
+    "clinicalCorrelate": [],
+    "assignments": [
+      { "label": "ELIZA – First Chatbot", "url": "https://web.njit.edu/~ronkowit/eliza.html" }
+    ],
+    "supplemental": [],
+    "slideFile": "Lecture Slides/Lec 1.pptx"
+  },
+  {
+    "number": 2,
+    "title": "Necessary Math for AI",
+    "topics": [
+      "Vectors, matrices, tensors",
+      "Matrix multiplication, inversion, transposition",
+      "Points, surfaces and functions in n-dimensions",
+      "Gradients, gradient descent",
+      "Brief history of modern AI"
+    ],
+    "clinicalCorrelate": [
+      { "label": "Atrial fibrillation risk stratification (toy example)", "url": "" }
+    ],
+    "assignments": [
+      { "label": "Matrix multiplication", "url": "https://www.mathsisfun.com/algebra/matrix-multiplying.html" },
+      { "label": "Matrix multiplication worksheet", "url": "https://cdn.kutasoftware.com/Worksheets/Alg2/Matrix%20Multiplication.pdf" }
+    ],
+    "supplemental": [
+      { "label": "Matrix multiplication demo", "url": "http://matrixmultiplication.xyz/" }
+    ],
+    "slideFile": "Lecture Slides/Lec 2.pptx"
+  },
+  {
+    "number": 3,
+    "title": "Loss Functions, Linear Regression & Classification",
+    "topics": [
+      "Loss functions; linear regression",
+      "Loss surfaces and gradient descent; local and global minima",
+      "Mean squared error, cross entropy, domain specific loss",
+      "Classification problems: ROC curves; logistic regression",
+      "AUROC, sensitivity and specificity",
+      "Supervised vs unsupervised learning",
+      "Verifier's law"
+    ],
+    "clinicalCorrelate": [
+      { "label": "Predicting survival in COVID-19 Patients", "url": "https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-020-01316-6" }
+    ],
+    "assignments": [
+      { "label": "Google lec", "url": "https://developers.google.com/machine-learning/crash-course/linear-regression/loss#check-your-understanding" },
+      { "label": "Gradient descent demo", "url": "https://uclaacm.github.io/gradient-descent-visualiser/#playground" },
+      { "label": "Linear regression", "url": "https://mlu-explain.github.io/linear-regression/" }
+    ],
+    "supplemental": [
+      { "label": "MIT Textbook Ch 2 (dense)", "url": "" }
+    ],
+    "slideFile": "Lecture Slides/Lec 3.pptx"
+  },
+  {
+    "number": 4,
+    "title": "Training: Overfitting, Cross-Validation & Hyperparameters",
+    "topics": [
+      "Overfitting, cross-validation",
+      "Revisiting gradient descent, vanishing gradient problem",
+      "Stochastic GD, hyperparameters, tuning",
+      "Initialization of weights, pretraining"
+    ],
+    "clinicalCorrelate": [
+      { "label": "Afib ablations w/wo AI: an RCT", "url": "https://www.nature.com/articles/s41591-025-03517-w#Sec2" }
+    ],
+    "assignments": [
+      { "label": "Overfitting and underfitting", "url": "https://datalab.flitto.com/en/company/blog/what-is-underfitting-and-overfitting-easy-example/" },
+      { "label": "Neural networks", "url": "https://mlu-explain.github.io/neural-networks/" }
+    ],
+    "supplemental": [
+      { "label": "Classifiers", "url": "https://developers.google.com/machine-learning/crash-course/classification/thresholding" },
+      { "label": "Karpathy's Training Recipe", "url": "https://karpathy.github.io/2019/04/25/recipe/" }
+    ],
+    "slideFile": "Lecture Slides/Lec 4.pptx"
+  },
+  {
+    "number": 5,
+    "title": "Data Encodings & Medical Data",
+    "topics": [
+      "Data encodings: one hot, numerical, thermometer encodings",
+      "Sampling bias; labelling (manual vs automatic)",
+      "Data augmentation",
+      "Examples of medical data available, how to encode it",
+      "Constraints of medical data"
+    ],
+    "clinicalCorrelate": [
+      { "label": "Predictors of diabetes", "url": "https://www.nature.com/articles/s41598-024-52023-5" },
+      { "label": "Pneumonia prediction w augmentations", "url": "https://colab.research.google.com/github/M-Borsuk/CNN-Pneumonia-Classification/blob/main/PneumoniaScansCNN.ipynb#scrollTo=6gnA0iBtPBcY" },
+      { "label": "Random CT Windowing as Augmentation", "url": "https://arxiv.org/pdf/2510.08116" }
+    ],
+    "assignments": [
+      { "label": "Logistic regression video", "url": "https://www.youtube.com/watch?v=EKm0spFxFG4" },
+      { "label": "ROC Curves", "url": "https://mlu-explain.github.io/roc-auc/" }
+    ],
+    "supplemental": [
+      { "label": "Logistic regression (dense)", "url": "https://mlu-explain.github.io/logistic-regression/" },
+      { "label": "Classification of abd vs chest x-ray code example", "url": "https://colab.research.google.com/github/mdai/ml-lessons/blob/master/lesson1-xray-images-classification.ipynb" }
+    ],
+    "slideFile": "Lecture Slides/Lec 5.pptx"
+  },
+  {
+    "number": 6,
+    "title": "Neural Networks",
+    "topics": [
+      "Review of classical neural net structure",
+      "Recurrent neural nets",
+      "Autoencoders",
+      "Generative adversarial nets (GANs)"
+    ],
+    "clinicalCorrelate": [],
+    "assignments": [
+      { "label": "3b1b neural nets article", "url": "https://www.3blue1brown.com/lessons/neural-networks" },
+      { "label": "Tensorflow demo", "url": "https://playground.tensorflow.org/#activation=tanh&regularization=L1&batchSize=10&dataset=spiral&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=8,8&seed=0.64756&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false" }
+    ],
+    "supplemental": [
+      { "label": "MIT Lec – forward/back propagation", "url": "" }
+    ],
+    "slideFile": "Lecture Slides/Lec 6.pptx"
+  },
+  {
+    "number": 8,
+    "title": "Case Studies",
+    "topics": [
+      "Arrhythmia classification",
+      "Age from X-ray",
+      "Stroke Prediction",
+      "Synthetic Bone MRI",
+      "PICU Diagnosis Classification"
+    ],
+    "clinicalCorrelate": [
+      { "label": "Arrhythmia classification", "url": "https://www.nature.com/articles/s41591-018-0268-3" },
+      { "label": "Age from X-ray", "url": "https://www.nature.com/articles/s43856-022-00220-6" },
+      { "label": "Stroke Prediction", "url": "https://www.nature.com/articles/s41598-024-82931-5" },
+      { "label": "Synthetic Bone MRI", "url": "https://link.springer.com/article/10.1007/s00330-025-11644-8" },
+      { "label": "PICU Diagnosis Classification", "url": "https://arxiv.org/pdf/1511.03677" }
+    ],
+    "assignments": [],
+    "supplemental": [
+      { "label": "Stanford Interactive Demo", "url": "http://vision.stanford.edu/teaching/cs231n-demos/linear-classify/" }
+    ],
+    "slideFile": "Lecture Slides/Lec 8.pptx"
+  },
+  {
+    "number": 9,
+    "title": "Computer Vision in Medicine",
+    "topics": [
+      "Introduction to computer vision",
+      "Radiology, dermatology applications",
+      "CNNs",
+      "Transformer architectures"
+    ],
+    "clinicalCorrelate": [
+      { "label": "Derm lesion classification", "url": "https://www.nature.com/articles/nature21056" }
+    ],
+    "assignments": [
+      { "label": "MNIST Demo", "url": "https://deeplizard.com/resource/pavq7noze2" },
+      { "label": "CNN big demo", "url": "https://poloclub.github.io/cnn-explainer/" }
+    ],
+    "supplemental": [
+      { "label": "1D CNNs for wordle best guess", "url": "https://mindthegapblog.com/posts/wordle-solver-ai-cnn/" },
+      { "label": "CNNs for EKGs", "url": "https://www.nature.com/articles/s41591-018-0306-1" }
+    ],
+    "slideFile": "Lecture Slides/Lec 9.pptx"
+  },
+  {
+    "number": 10,
+    "title": "Large Language Models & Transformers",
+    "topics": [
+      "Introduction to large language models / ChatGPT",
+      "Transformers",
+      "Preprompting",
+      "Text mining from notes"
+    ],
+    "clinicalCorrelate": [
+      { "label": "H&N cancer prediction", "url": "https://arxiv.org/pdf/2407.07296" }
+    ],
+    "assignments": [
+      { "label": "Language embeddings", "url": "https://www.cs.cmu.edu/~dst/WordEmbeddingDemo/tutorial.html" },
+      { "label": "Transformer explained", "url": "https://poloclub.github.io/transformer-explainer/" }
+    ],
+    "supplemental": [
+      { "label": "High dim embedding space demo", "url": "https://projector.tensorflow.org/" },
+      { "label": "Entropy of Natural Language", "url": "https://youtu.be/5eqRuVp65eY" }
+    ],
+    "slideFile": "Lecture Slides/Lec 10.pptx"
+  },
+  {
+    "number": 11,
+    "title": "Guest Lecture: AI for Cardiology",
+    "topics": [
+      "Guest lecture: AI for Cardiology"
+    ],
+    "clinicalCorrelate": [
+      { "label": "Guest lecture", "url": "" }
+    ],
+    "assignments": [
+      { "label": "None", "url": "" }
+    ],
+    "supplemental": [],
+    "slideFile": "Lecture Slides/Lec 11.pptx"
+  },
+  {
+    "number": 12,
+    "title": "Practicalities of ML",
+    "topics": [
+      "Transfer learning, federated learning",
+      "Hardware (GPU/TPU/ASIC)",
+      "Few shot learning",
+      "Pre-existing infrastructure (Hugging Face, GitHub, arXiv)"
+    ],
+    "clinicalCorrelate": [
+      { "label": "Transfer learning MR protocols", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8321322/" }
+    ],
+    "assignments": [
+      { "label": "Hugging Face", "url": "https://huggingface.co/" },
+      { "label": "arXiv", "url": "https://arxiv.org/search/?query=medical&searchtype=all&source=header" },
+      { "label": "HF Papers", "url": "https://huggingface.co/papers/trending?q=medical" },
+      { "label": "GitHub", "url": "https://github.com/search?q=medical&type=repositories" }
+    ],
+    "supplemental": [],
+    "slideFile": "Lecture Slides/Lec 12 Project Intro.pptx"
+  },
+  {
+    "number": 13,
+    "title": "AI in the Clinic",
+    "topics": [
+      "Examples and challenges",
+      "EHR systems, PACS, surgical robotics integration",
+      "510(k) FDA medical device classes, real-time AI",
+      "Case studies",
+      "Clinical utility vs accuracy"
+    ],
+    "clinicalCorrelate": [
+      { "label": "EPIC Sepsis Model", "url": "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2781307" }
+    ],
+    "assignments": [
+      { "label": "Google AI Retinal Screen", "url": "https://www.technologyreview.com/2020/04/27/1000658/google-medical-ai-accurate-lab-real-life-clinic-covid-diabetes-retina-disease/" },
+      { "label": "EPIC Sepsis Model", "url": "https://news.umich.edu/widely-used-ai-tool-for-early-sepsis-detection-may-be-cribbing-doctors-suspicions/" }
+    ],
+    "supplemental": [],
+    "slideFile": "Lecture Slides/Lec 13.pptx"
+  },
+  {
+    "number": 14,
+    "title": "Project Introduction",
+    "topics": [
+      "Project introduction"
+    ],
+    "clinicalCorrelate": [
+      { "label": "None", "url": "" }
+    ],
+    "assignments": [],
+    "supplemental": [],
+    "slideFile": "Lecture Slides/Lec 14.pptx"
+  },
+  {
+    "number": 15,
+    "title": "Fairness & Bias in Medical AI",
+    "topics": [
+      "Sources of bias",
+      "Metrics",
+      "Case studies"
+    ],
+    "clinicalCorrelate": [
+      { "label": "Predicting Race from Chest X-Ray (full paper)", "url": "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(22)00063-2/fulltext" }
+    ],
+    "assignments": [
+      { "label": "Predicting Race from Medical Imaging", "url": "https://news.mit.edu/2022/artificial-intelligence-predicts-patients-race-from-medical-images-0520" },
+      { "label": "Fair ML Textbook pg 205: Case study: the gender earnings gap on Uber", "url": "" }
+    ],
+    "supplemental": [
+      { "label": "Fair ML Textbook", "url": "https://www.fairmlbook.org/pdf/fairmlbook.pdf" },
+      { "label": "Bias Types", "url": "https://www.chapman.edu/ai/bias-in-ai.aspx" }
+    ],
+    "slideFile": "Lecture Slides/Lec 15.pptx"
+  },
+  {
+    "number": 16,
+    "title": "Ethics of AI",
+    "topics": [
+      "Data ownership",
+      "Likeness generation",
+      "Environmental concerns",
+      "Lecture and discussion"
+    ],
+    "clinicalCorrelate": [
+      { "label": "Gender classification", "url": "https://news.mit.edu/2018/study-finds-gender-skin-type-bias-artificial-intelligence-systems-0212" }
+    ],
+    "assignments": [
+      { "label": "Reward Tampering (Anthropic AI)", "url": "https://www.anthropic.com/research/reward-tampering" }
+    ],
+    "supplemental": [
+      { "label": "Proposed ethical AI guidelines", "url": "https://link.springer.com/article/10.1007/s11023-018-9482-5" }
+    ],
+    "slideFile": "Lecture Slides/Lec 16.pptx"
+  },
+  {
+    "number": 17,
+    "title": "Interpretable AI",
+    "topics": [
+      "SHAP, LIME",
+      "Feature importance",
+      "Saliency maps in imaging"
+    ],
+    "clinicalCorrelate": [
+      { "label": "Saliency maps for CXR interpretation", "url": "https://www.nature.com/articles/s42256-022-00536-x" }
+    ],
+    "assignments": [],
+    "supplemental": [
+      { "label": "LLM Interpretability", "url": "https://aclanthology.org/2024.acl-long.470.pdf" }
+    ],
+    "slideFile": "Lecture Slides/Lec 17.pptx"
+  },
+  {
+    "number": 18,
+    "title": "Guest Lecture: Building a Healthcare Startup",
+    "topics": [
+      "Guest lecture: Building a healthcare startup"
+    ],
+    "clinicalCorrelate": [],
+    "assignments": [],
+    "supplemental": []
+  },
+  {
+    "number": 19,
+    "title": "AI Superintelligence & Consciousness",
+    "topics": [
+      "AI Superintelligence",
+      "AI Consciousness",
+      "Chinese room allegory",
+      "Lecture and discussion"
+    ],
+    "clinicalCorrelate": [],
+    "assignments": [
+      { "label": "Race for Superintelligence", "url": "https://www.youtube.com/watch?v=5KVDDfAkRgc" }
+    ],
+    "supplemental": [
+      { "label": "How does AI self improve?", "url": "https://www.technologyreview.com/2025/08/06/1121193/five-ways-that-ai-is-learning-to-improve-itself/" }
+    ]
+  },
+  {
+    "number": 20,
+    "title": "Guest Lecture: Use Cases of AI",
+    "topics": [
+      "Guest lecture: Use cases of AI"
+    ],
+    "clinicalCorrelate": [
+      { "label": "Guest lecture", "url": "" }
+    ],
+    "assignments": [],
+    "supplemental": []
+  },
+  {
+    "number": 21,
+    "title": "AI Rollout Case Study",
+    "topics": [
+      "Sample AI rollout interactive case study"
+    ],
+    "clinicalCorrelate": [],
+    "assignments": [],
+    "supplemental": []
+  },
+  {
+    "number": 22,
+    "title": "AI Limitations and Failures",
+    "topics": [
+      "AI Limitations and failures: case studies"
+    ],
+    "clinicalCorrelate": [],
+    "assignments": [],
+    "supplemental": []
+  },
+  {
+    "number": 23,
+    "title": "Project Discussion",
+    "topics": [
+      "Project Due midnight before — project discussion"
+    ],
+    "clinicalCorrelate": [],
+    "assignments": [],
+    "supplemental": []
+  }
+]
