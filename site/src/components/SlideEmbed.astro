@@ -1,0 +1,32 @@
+---
+import { BASE } from '../lib/constants';
+
+interface Props {
+  pdf: string;
+}
+
+const { pdf } = Astro.props;
+const href = `${BASE}/${pdf}`;
+const filename = pdf.split('/').pop() || pdf;
+---
+
+<div class="mt-6 border border-rule rounded-xl overflow-hidden bg-stone-50">
+  <iframe
+    src={href}
+    class="w-full"
+    style="height: 600px;"
+    loading="lazy"
+  >
+  </iframe>
+  <div class="flex items-center justify-between px-5 py-3 border-t border-rule bg-stone-100/80">
+    <p class="text-xs text-ink-secondary truncate">{filename}</p>
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="text-xs text-ink no-underline hover:text-accent transition-colors flex items-center gap-1"
+    >
+      Open in new tab ↗
+    </a>
+  </div>
+</div>

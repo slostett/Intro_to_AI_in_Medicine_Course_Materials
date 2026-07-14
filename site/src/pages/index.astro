@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import lectures from '../content/lectures/lectures.json';
+import { BASE } from '../lib/constants';
 
 const lectureCount = lectures.length;
 ---
@@ -17,7 +18,7 @@ const lectureCount = lectures.length;
         tools, and applications of artificial intelligence in clinical and biomedical contexts.
       </p>
       <div class="mt-12 flex flex-wrap gap-6">
-        <a href="/syllabus" class="inline-flex items-center gap-2 bg-ink text-paper px-6 py-3 rounded-full text-[15px] font-medium no-underline hover:bg-ink/80 transition-colors">
+        <a href={`${BASE}/syllabus`} class="inline-flex items-center gap-2 bg-ink text-paper px-6 py-3 rounded-full text-[15px] font-medium no-underline hover:bg-ink/80 transition-colors">
           View Syllabus
         </a>
         <a
@@ -87,7 +88,7 @@ const lectureCount = lectures.length;
       </p>
       <div class="mt-10 flex flex-wrap gap-4">
         <a
-          href="/4%20pillars%20diagram%20empty.pdf"
+          href={`${BASE}/4%20pillars%20diagram%20empty.pdf`}
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-2 border border-rule text-ink px-5 py-2.5 rounded-full text-[15px] no-underline hover:border-ink transition-colors"
@@ -95,7 +96,7 @@ const lectureCount = lectures.length;
           Diagram (Blank) ↗
         </a>
         <a
-          href="/4%20pillars%20diagram%20filled%20out.pdf"
+          href={`${BASE}/4%20pillars%20diagram%20filled%20out.pdf`}
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-2 border border-rule text-ink px-5 py-2.5 rounded-full text-[15px] no-underline hover:border-ink transition-colors"

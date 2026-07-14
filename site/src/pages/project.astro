@@ -1,90 +1,133 @@
 ---
 import Base from '../layouts/Base.astro';
+import { BASE } from '../lib/constants';
 ---
 
 <Base
   title="Final Project — Introduction to AI in Medicine"
-  description="Final project guidelines and selected student examples."
+  description="Student final project: explore a clinically relevant question using AI methods."
 >
 
-  <!-- Project brief -->
   <section class="section-band">
     <div class="content-col reveal-on-scroll">
-      <p class="section-label">Final Project</p>
-      <h1>Build Something<br/>That Matters</h1>
-      <div class="mt-10 max-w-2xl space-y-6 text-[17px] text-ink-secondary leading-relaxed">
-        <p>
-          Students explore clinically relevant questions using AI methods discussed throughout the course,
-          with emphasis on interpretability, evaluation, and real-world relevance.
-        </p>
-        <p>
-          The project is designed to bridge the gap between conceptual understanding and practical application.
-          You'll formulate a clinical question, select or adapt an AI method, evaluate it critically,
-          and present your findings.
-        </p>
+      <p class="section-label">Capstone</p>
+      <h1>Final Project</h1>
+      <p class="mt-6 text-lg text-ink-secondary max-w-2xl leading-relaxed">
+        A culminating assignment where you apply the concepts from this course to explore
+        a clinically relevant question using AI methods.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-band-alt">
+    <div class="content-col reveal-on-scroll max-w-2xl space-y-8 text-[17px] text-ink-secondary leading-relaxed">
+      <p>
+        Choose a clinical domain that interests you — diagnostic imaging, clinical decision support,
+        drug discovery, patient stratification, or any other area where AI is making an impact.
+      </p>
+      <p>
+        Your project should demonstrate understanding of the Four Pillars framework: data quality,
+        model selection, evaluation metrics, and clinical integration feasibility.
+      </p>
+      <p>
+        You'll produce a written report and a brief presentation, following the deliverable guidelines
+        outlined below.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-band">
+    <div class="content-col reveal-on-scroll">
+      <h3 class="mb-8">Deliverables</h3>
+      <div class="space-y-6">
+        <div class="flex items-start gap-4">
+          <span class="mt-1 w-8 h-8 rounded-full bg-ink/5 flex items-center justify-center text-sm font-semibold text-ink flex-shrink-0">1</span>
+          <div>
+            <p class="font-medium text-ink">Written Report</p>
+            <p class="mt-1 text-[15px] text-ink-secondary">8–12 pages, covering background, methodology, results, and critical analysis.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="mt-1 w-8 h-8 rounded-full bg-ink/5 flex items-center justify-center text-sm font-semibold text-ink flex-shrink-0">2</span>
+          <div>
+            <p class="font-medium text-ink">Presentation</p>
+            <p class="mt-1 text-[15px] text-ink-secondary">10-minute presentation with slides to peers and faculty.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="mt-1 w-8 h-8 rounded-full bg-ink/5 flex items-center justify-center text-sm font-semibold text-ink flex-shrink-0">3</span>
+          <div>
+            <p class="font-medium text-ink">Bibliography</p>
+            <p class="mt-1 text-[15px] text-ink-secondary">Minimum 10 peer-reviewed sources, properly cited.</p>
+          </div>
+        </div>
       </div>
-      <div class="mt-10 flex flex-wrap gap-4">
+      <div class="mt-10">
         <a
-          href="/Final%20Project%20Deliverables.docx"
+          href={`${BASE}/Final%20Project%20Deliverables.docx`}
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-2 border border-rule text-ink px-5 py-2.5 rounded-full text-[15px] no-underline hover:border-ink transition-colors"
         >
-          Download Guidelines ↗
-        </a>
-        <a
-          href="/Lecture%20Slides/Lec%2012%20Project%20Intro.pptx"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 border border-rule text-ink px-5 py-2.5 rounded-full text-[15px] no-underline hover:border-ink transition-colors"
-        >
-          Project Intro Slides ↗
+          Download Full Rubric ↗
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Student examples -->
   <section class="section-band-alt">
     <div class="content-col reveal-on-scroll">
-      <p class="section-label">Student Work</p>
-      <h2>Selected Projects</h2>
-      <p class="mt-6 text-[17px] text-ink-secondary max-w-2xl leading-relaxed">
-        Examples from previous terms. Each project demonstrates a different approach to applying AI
-        to a clinical question.
+      <h3 class="mb-8">Student Examples</h3>
+      <p class="text-[15px] text-ink-secondary mb-8">
+        Previous student projects — use these for inspiration and to understand expected scope.
       </p>
-      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <a
-          href="/Student%20Final%20Project%20Examples/Future%20Internist%20Final%20Project.docx"
+          href={`${BASE}/Student%20Final%20Project%20Examples/Future%20Internist%20Final%20Project.docx`}
           target="_blank"
           rel="noopener noreferrer"
-          class="group block border border-rule rounded-[18px] p-8 no-underline hover:border-ink/30 transition-colors"
+          class="block border border-rule rounded-xl p-6 no-underline hover:border-ink transition-colors"
         >
-          <h3 class="text-lg font-semibold text-ink tracking-tighter group-hover:text-accent transition-colors">
-            Future Internist
-          </h3>
-          <p class="mt-3 text-[15px] text-ink-secondary leading-relaxed">
-            Final project exploring AI applications in general internal medicine practice.
-          </p>
-          <p class="mt-4 text-sm text-ink-secondary inline-flex items-center gap-1">
-            View project <span class="text-accent">↗</span>
-          </p>
+          <p class="font-semibold text-ink">Future Internist — AI in General Internal Medicine</p>
+          <p class="mt-2 text-[15px] text-ink-secondary">Exploring diagnostic support systems for common internal medicine presentations.</p>
         </a>
         <a
-          href="/Student%20Final%20Project%20Examples/Future%20Neurologist%20Final%20Project.docx"
+          href={`${BASE}/Student%20Final%20Project%20Examples/Future%20Neurologist%20Final%20Project.docx`}
           target="_blank"
           rel="noopener noreferrer"
-          class="group block border border-rule rounded-[18px] p-8 no-underline hover:border-ink/30 transition-colors"
+          class="block border border-rule rounded-xl p-6 no-underline hover:border-ink transition-colors"
         >
-          <h3 class="text-lg font-semibold text-ink tracking-tighter group-hover:text-accent transition-colors">
-            Future Neurologist
-          </h3>
-          <p class="mt-3 text-[15px] text-ink-secondary leading-relaxed">
-            Final project exploring AI applications in neurology and neurological disease.
-          </p>
-          <p class="mt-4 text-sm text-ink-secondary inline-flex items-center gap-1">
-            View project <span class="text-accent">↗</span>
-          </p>
+          <p class="font-semibold text-ink">Future Neurologist — AI in Neurology</p>
+          <p class="mt-2 text-[15px] text-ink-secondary">Applying deep learning to neurological imaging and movement disorder classification.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* AI Rollout Scenario */}
+  <section class="section-band">
+    <div class="content-col reveal-on-scroll">
+      <h3 class="mb-8">AI Rollout Scenario Workshop</h3>
+      <p class="text-[15px] text-ink-secondary max-w-2xl mb-8">
+        A structured exercise for thinking through the practical challenges of deploying an AI system
+        in a real clinical setting — workflow integration, stakeholder buy-in, monitoring, and safety.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a
+          href={`${BASE}/AI%20Rollout%20Scenario/AI%20Rollout%20Scenario%20Worksheet%20-%20Student.docx`}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 border border-rule text-ink px-5 py-2.5 rounded-full text-[15px] no-underline hover:border-ink transition-colors"
+        >
+          Student Worksheet ↗
+        </a>
+        <a
+          href={`${BASE}/AI%20Rollout%20Scenario/Actor%20Handout.docx`}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 border border-rule text-ink px-5 py-2.5 rounded-full text-[15px] no-underline hover:border-ink transition-colors"
+        >
+          Actor Handout ↗
         </a>
       </div>
     </div>

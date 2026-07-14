@@ -1,6 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
+import SlideEmbed from '../../components/SlideEmbed.astro';
 import lectures from '../../content/lectures/lectures.json';
+import { BASE } from '../../lib/constants';
 
 export async function getStaticPaths() {
   const sorted = [...lectures].sort((a, b) => a.number - b.number);
@@ -15,7 +17,7 @@ const allLectures = [...lectures].sort((a, b) => a.number - b.number);
 const lecture = allLectures.find(l => l.number === lectureNum);
 
 if (!lecture) {
-  return Astro.redirect('/syllabus');
+  return Astro.redirect(`${BASE}/syllabus`);
 }
 
 const idx = allLectures.indexOf(lecture);
@@ -24,6 +26,10 @@ const nextLecture = idx < allLectures.length - 1 ? allLectures[idx + 1] : null;
 
 const filterLinks = (links: Array<{ label: string; url: string }>) =>
   links.filter(l => l.url && l.url !== '');
+
+// Build href: external URLs stay as-is, internal paths get BASE prefix
+const linkHref = (url: string) =>
+  url.startsWith('http') ? url : `${BASE}/${url}`;
 ---
 
 <Base
@@ -64,7 +70,7 @@ const filterLinks = (links: Array<{ label: string; url: string }>) =>
           <div class="link-group-clinical link-cluster space-y-3">
             {filterLinks(lecture.clinicalCorrelate).map(link => (
               <a
-                href={link.url}
+                href={linkHref(link.url)}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-[15px] text-ink no-underline hover:text-accent transition-colors"
@@ -86,7 +92,7 @@ const filterLinks = (links: Array<{ label: string; url: string }>) =>
           <div class="link-group-assignment link-cluster space-y-3">
             {filterLinks(lecture.assignments).map(link => (
               <a
-                href={link.url}
+                href={linkHref(link.url)}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-[15px] text-ink no-underline hover:text-accent transition-colors"
@@ -105,7 +111,7 @@ const filterLinks = (links: Array<{ label: string; url: string }>) =>
           <div class="link-group-supplemental link-cluster space-y-3">
             {filterLinks(lecture.supplemental).map(link => (
               <a
-                href={link.url}
+                href={linkHref(link.url)}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-[15px] text-ink no-underline hover:text-accent transition-colors"
@@ -121,14 +127,18 @@ const filterLinks = (links: Array<{ label: string; url: string }>) =>
       {lecture.slideFile && (
         <div class="reveal-on-scroll">
           <h3 class="mb-6">Slides</h3>
-          <a
-            href={'/' + lecture.slideFile}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 border border-rule text-ink px-5 py-2.5 rounded-full text-[15px] no-underline hover:border-ink transition-colors"
-          >
-            Download Slides ↗
-          </a>
+          {/* Derive PDF path from slideFile */}
+          <SlideEmbed pdf={lecture.slideFile.replace(/\.pptx$/i, '.pdf')} />
+          <p class="mt-4">
+            <a
+              href={linkHref(lecture.slideFile)}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 border border-rule text-ink px-5 py-2.5 rounded-full text-[15px] no-underline hover:border-ink transition-colors"
+            >
+              Download PPTX ↗
+            </a>
+          </p>
         </div>
       )}
 
@@ -141,7 +151,7 @@ const filterLinks = (links: Array<{ label: string; url: string }>) =>
       <div class="flex items-center justify-between gap-8">
         {prevLecture ? (
           <a
-            href={`/lecture/${prevLecture.number}`}
+            href={`${BASE}/lecture/${prevLecture.number}`}
             class="group flex items-center gap-3 no-underline max-w-[45%]"
           >
             <svg class="w-5 h-5 text-rule group-hover:text-accent transition-colors flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -157,7 +167,7 @@ const filterLinks = (links: Array<{ label: string; url: string }>) =>
         ) : <div />}
         {nextLecture ? (
           <a
-            href={`/lecture/${nextLecture.number}`}
+            href={`${BASE}/lecture/${nextLecture.number}`}
             class="group flex items-center justify-end gap-3 no-underline max-w-[45%] ml-auto"
           >
             <div class="text-right">

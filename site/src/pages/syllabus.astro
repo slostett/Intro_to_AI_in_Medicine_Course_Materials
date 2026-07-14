@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import lectures from '../content/lectures/lectures.json';
+import { BASE } from '../lib/constants';
 
 const allLectures = [...lectures].sort((a, b) => a.number - b.number);
 ---
@@ -34,7 +35,7 @@ const allLectures = [...lectures].sort((a, b) => a.number - b.number);
               </div>
             )}
             <a
-              href={`/lecture/${lecture.number}`}
+              href={`${BASE}/lecture/${lecture.number}`}
               class="group block border-b border-rule py-10 md:py-12 no-underline reveal-on-scroll"
             >
               <div class="flex items-baseline gap-4 md:gap-6">
