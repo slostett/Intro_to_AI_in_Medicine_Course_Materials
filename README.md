@@ -74,7 +74,7 @@ Supplemental Material: Further reading for those interested in learning topics b
 
 - **Final Project Description**  
   Detailed guidelines for the course final project, including objectives, expectations, and deliverables.  
-  See: `Final Project Deliverables.docx` and `Lecture Slides/Lec 12 Project Intro.pptx`
+  See: `Final Project Deliverables.docx` and `Lecture Slides/Lec 14.pptx`
 
 Students are encouraged to explore clinically relevant questions using AI methods discussed in the course, with an emphasis on interpretability, evaluation, and real-world relevance.
 

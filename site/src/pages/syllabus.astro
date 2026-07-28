@@ -8,7 +8,7 @@ const allLectures = [...lectures].sort((a, b) => a.number - b.number);
 
 <Base
   title="Syllabus — Introduction to AI in Medicine"
-  description="23 lectures covering AI fundamentals, clinical applications, ethics, and a final project."
+  description="22 lectures covering AI fundamentals, clinical applications, ethics, and a final project."
 >
 
   <section class="section-band">
@@ -26,14 +26,8 @@ const allLectures = [...lectures].sort((a, b) => a.number - b.number);
   <section class="section-band-alt">
     <div class="content-col space-y-0">
       {allLectures.map((lecture) => {
-        const showGap = lecture.number === 8;
         return (
           <>
-            {showGap && (
-              <div class="py-8 text-center text-sm text-ink-secondary">
-                <span class="inline-block border-t border-rule pt-8 px-4">Lecture 7 is not scheduled this term</span>
-              </div>
-            )}
             <a
               href={`${BASE}/lecture/${lecture.number}`}
               class="group block border-b border-rule py-10 md:py-12 no-underline reveal-on-scroll"

@@ -142,6 +142,15 @@ const linkHref = (url: string) =>
         </div>
       )}
 
+      {!lecture.slideFile && lecture.note && (
+        <div class="reveal-on-scroll">
+          <h3 class="mb-6">Slides</h3>
+          <p class="text-[15px] text-ink-secondary leading-relaxed border-l-2 border-rule pl-4">
+            {lecture.note}
+          </p>
+        </div>
+      )}
+
     </div>
   </section>
 

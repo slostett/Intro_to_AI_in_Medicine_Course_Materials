@@ -130,7 +130,7 @@
     "slideFile": "Lecture Slides/Lec 6.pptx"
   },
   {
-    "number": 8,
+    "number": 7,
     "title": "Case Studies",
     "topics": [
       "Arrhythmia classification",
@@ -150,10 +150,10 @@
     "supplemental": [
       { "label": "Stanford Interactive Demo", "url": "http://vision.stanford.edu/teaching/cs231n-demos/linear-classify/" }
     ],
-    "slideFile": "Lecture Slides/Lec 8.pptx"
+    "slideFile": "Lecture Slides/Lec 7.pptx"
   },
   {
-    "number": 9,
+    "number": 8,
     "title": "Computer Vision in Medicine",
     "topics": [
       "Introduction to computer vision",
@@ -172,10 +172,10 @@
       { "label": "1D CNNs for wordle best guess", "url": "https://mindthegapblog.com/posts/wordle-solver-ai-cnn/" },
       { "label": "CNNs for EKGs", "url": "https://www.nature.com/articles/s41591-018-0306-1" }
     ],
-    "slideFile": "Lecture Slides/Lec 9.pptx"
+    "slideFile": "Lecture Slides/Lec 8.pptx"
   },
   {
-    "number": 10,
+    "number": 9,
     "title": "Large Language Models & Transformers",
     "topics": [
       "Introduction to large language models / ChatGPT",
@@ -194,10 +194,10 @@
       { "label": "High dim embedding space demo", "url": "https://projector.tensorflow.org/" },
       { "label": "Entropy of Natural Language", "url": "https://youtu.be/5eqRuVp65eY" }
     ],
-    "slideFile": "Lecture Slides/Lec 10.pptx"
+    "slideFile": "Lecture Slides/Lec 9.pptx"
   },
   {
-    "number": 11,
+    "number": 10,
     "title": "Guest Lecture: AI for Cardiology",
     "topics": [
       "Guest lecture: AI for Cardiology"
@@ -209,10 +209,10 @@
       { "label": "None", "url": "" }
     ],
     "supplemental": [],
-    "slideFile": "Lecture Slides/Lec 11.pptx"
+    "note": "This was a guest lecture. The slides presented belong to the guest speaker and are proprietary to them, so they are not included here."
   },
   {
-    "number": 12,
+    "number": 11,
     "title": "Practicalities of ML",
     "topics": [
       "Transfer learning, federated learning",
@@ -230,10 +230,10 @@
       { "label": "GitHub", "url": "https://github.com/search?q=medical&type=repositories" }
     ],
     "supplemental": [],
-    "slideFile": "Lecture Slides/Lec 12 Project Intro.pptx"
+    "slideFile": "Lecture Slides/Lec 11.pptx"
   },
   {
-    "number": 13,
+    "number": 12,
     "title": "AI in the Clinic",
     "topics": [
       "Examples and challenges",
@@ -250,10 +250,10 @@
       { "label": "EPIC Sepsis Model", "url": "https://news.umich.edu/widely-used-ai-tool-for-early-sepsis-detection-may-be-cribbing-doctors-suspicions/" }
     ],
     "supplemental": [],
-    "slideFile": "Lecture Slides/Lec 13.pptx"
+    "slideFile": "Lecture Slides/Lec 12.pptx"
   },
   {
-    "number": 14,
+    "number": 13,
     "title": "Project Introduction",
     "topics": [
       "Project introduction"
@@ -263,10 +263,10 @@
     ],
     "assignments": [],
     "supplemental": [],
-    "slideFile": "Lecture Slides/Lec 14.pptx"
+    "slideFile": "Lecture Slides/Lec 13.pptx"
   },
   {
-    "number": 15,
+    "number": 14,
     "title": "Fairness & Bias in Medical AI",
     "topics": [
       "Sources of bias",
@@ -284,10 +284,10 @@
       { "label": "Fair ML Textbook", "url": "https://www.fairmlbook.org/pdf/fairmlbook.pdf" },
       { "label": "Bias Types", "url": "https://www.chapman.edu/ai/bias-in-ai.aspx" }
     ],
-    "slideFile": "Lecture Slides/Lec 15.pptx"
+    "slideFile": "Lecture Slides/Lec 14.pptx"
   },
   {
-    "number": 16,
+    "number": 15,
     "title": "Ethics of AI",
     "topics": [
       "Data ownership",
@@ -304,10 +304,10 @@
     "supplemental": [
       { "label": "Proposed ethical AI guidelines", "url": "https://link.springer.com/article/10.1007/s11023-018-9482-5" }
     ],
-    "slideFile": "Lecture Slides/Lec 16.pptx"
+    "slideFile": "Lecture Slides/Lec 15.pptx"
   },
   {
-    "number": 17,
+    "number": 16,
     "title": "Interpretable AI",
     "topics": [
       "SHAP, LIME",
@@ -321,20 +321,21 @@
     "supplemental": [
       { "label": "LLM Interpretability", "url": "https://aclanthology.org/2024.acl-long.470.pdf" }
     ],
-    "slideFile": "Lecture Slides/Lec 17.pptx"
+    "note": "This lecture's topic was changed by student popular demand to a discussion of the residency match algorithm (ERAS). For that reason, slides for this lecture are not included here."
   },
   {
-    "number": 18,
+    "number": 17,
     "title": "Guest Lecture: Building a Healthcare Startup",
     "topics": [
       "Guest lecture: Building a healthcare startup"
     ],
     "clinicalCorrelate": [],
     "assignments": [],
-    "supplemental": []
+    "supplemental": [],
+    "note": "This was a guest lecture. The slides presented belong to the guest speaker and are proprietary to them, so they are not included here."
   },
   {
-    "number": 19,
+    "number": 18,
     "title": "AI Superintelligence & Consciousness",
     "topics": [
       "AI Superintelligence",
@@ -348,10 +349,11 @@
     ],
     "supplemental": [
       { "label": "How does AI self improve?", "url": "https://www.technologyreview.com/2025/08/06/1121193/five-ways-that-ai-is-learning-to-improve-itself/" }
-    ]
+    ],
+    "slideFile": "Lecture Slides/Lec 18.pptx"
   },
   {
-    "number": 20,
+    "number": 19,
     "title": "Guest Lecture: Use Cases of AI",
     "topics": [
       "Guest lecture: Use cases of AI"
@@ -360,30 +362,33 @@
       { "label": "Guest lecture", "url": "" }
     ],
     "assignments": [],
-    "supplemental": []
+    "supplemental": [],
+    "note": "This was a guest lecture. The slides presented belong to the guest speaker and are proprietary to them, so they are not included here."
   },
   {
-    "number": 21,
+    "number": 20,
     "title": "AI Rollout Case Study",
     "topics": [
       "Sample AI rollout interactive case study"
     ],
     "clinicalCorrelate": [],
     "assignments": [],
-    "supplemental": []
+    "supplemental": [],
+    "slideFile": "Lecture Slides/Lec 20.pptx"
   },
   {
-    "number": 22,
+    "number": 21,
     "title": "AI Limitations and Failures",
     "topics": [
       "AI Limitations and failures: case studies"
     ],
     "clinicalCorrelate": [],
     "assignments": [],
-    "supplemental": []
+    "supplemental": [],
+    "slideFile": "Lecture Slides/Lec 21.pptx"
   },
   {
-    "number": 23,
+    "number": 22,
     "title": "Project Discussion",
     "topics": [
       "Project Due midnight before — project discussion"
