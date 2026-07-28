@@ -56,6 +56,11 @@ const linkHref = (url: string) =>
           </li>
         ))}
       </ul>
+      {lecture.summary && (
+        <p class="mt-8 text-[17px] text-ink-secondary max-w-2xl leading-relaxed">
+          {lecture.summary}
+        </p>
+      )}
     </div>
   </section>
 

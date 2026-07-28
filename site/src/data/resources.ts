@@ -40,7 +40,7 @@ export const resources: Resource[] = [
   { title: "CNN Explainer", url: "https://poloclub.github.io/cnn-explainer/", type: "demo" },
   { title: "Transformer Explainer", url: "https://poloclub.github.io/transformer-explainer/", type: "demo" },
   { title: "Language Embeddings Demo", url: "https://www.cs.cmu.edu/~dst/WordEmbeddingDemo/tutorial.html", type: "demo" },
-  { title: "TensorFlow Projector — Embedding Space", url: "https://projector.tensorflow.org/", type: "demo" },
+  { title: "TensorFlow Projector: Embedding Space", url: "https://projector.tensorflow.org/", type: "demo" },
   { title: "Stanford CS231n Linear Classifier Demo", url: "http://vision.stanford.edu/teaching/cs231n-demos/linear-classify/", type: "demo" },
   { title: "MNIST Demo", url: "https://deeplizard.com/resource/pavq7noze2", type: "demo" },
   // Notebooks

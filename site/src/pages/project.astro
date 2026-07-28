@@ -4,7 +4,7 @@ import { BASE } from '../lib/constants';
 ---
 
 <Base
-  title="Final Project — Introduction to AI in Medicine"
+  title="Final Project: Introduction to AI in Medicine"
   description="Student final project: explore a clinically relevant question using AI methods."
 >
 
@@ -22,7 +22,7 @@ import { BASE } from '../lib/constants';
   <section class="section-band-alt">
     <div class="content-col reveal-on-scroll max-w-2xl space-y-8 text-[17px] text-ink-secondary leading-relaxed">
       <p>
-        Choose a clinical domain that interests you — diagnostic imaging, clinical decision support,
+        Choose a clinical domain that interests you, such as diagnostic imaging, clinical decision support,
         drug discovery, patient stratification, or any other area where AI is making an impact.
       </p>
       <p>
@@ -79,7 +79,7 @@ import { BASE } from '../lib/constants';
     <div class="content-col reveal-on-scroll">
       <h3 class="mb-8">Student Examples</h3>
       <p class="text-[15px] text-ink-secondary mb-8">
-        Previous student projects — use these for inspiration and to understand expected scope.
+        Previous student projects, included here for inspiration and to help you gauge expected scope.
       </p>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <a
@@ -88,8 +88,14 @@ import { BASE } from '../lib/constants';
           rel="noopener noreferrer"
           class="block border border-rule rounded-xl p-6 no-underline hover:border-ink transition-colors"
         >
-          <p class="font-semibold text-ink">Future Internist — AI in General Internal Medicine</p>
-          <p class="mt-2 text-[15px] text-ink-secondary">Exploring diagnostic support systems for common internal medicine presentations.</p>
+          <p class="font-semibold text-ink">Future Internist: AI in General Internal Medicine</p>
+          <p class="mt-2 text-[15px] text-ink-secondary">
+            Proposes an AI model that draws on longitudinal labs, medications, comorbidities, and imaging
+            reports to predict an individual cirrhosis patient's one- and three-year risk of developing
+            hepatocellular carcinoma. Rather than screening every patient on the same fixed six-month
+            schedule, the model would let clinicians tailor surveillance intensity to each patient's actual
+            risk, drawing on data across all major causes of cirrhosis rather than a single disease subtype.
+          </p>
         </a>
         <a
           href={`${BASE}/Student%20Final%20Project%20Examples/Future%20Neurologist%20Final%20Project.docx`}
@@ -97,8 +103,14 @@ import { BASE } from '../lib/constants';
           rel="noopener noreferrer"
           class="block border border-rule rounded-xl p-6 no-underline hover:border-ink transition-colors"
         >
-          <p class="font-semibold text-ink">Future Neurologist — AI in Neurology</p>
-          <p class="mt-2 text-[15px] text-ink-secondary">Applying deep learning to neurological imaging and movement disorder classification.</p>
+          <p class="font-semibold text-ink">Future Neurologist: AI in Neurology</p>
+          <p class="mt-2 text-[15px] text-ink-secondary">
+            Proposes a model that combines MRI, EEG, and clinical variables to predict which stroke
+            patients are at elevated risk of developing seizures. By integrating imaging, electrophysiology,
+            and clinical context instead of relying on a single data type, the approach aims to improve on
+            existing single-modality risk scores and help guide monitoring and anti-seizure medication
+            decisions.
+          </p>
         </a>
       </div>
     </div>
@@ -110,7 +122,7 @@ import { BASE } from '../lib/constants';
       <h3 class="mb-8">AI Rollout Scenario Workshop</h3>
       <p class="text-[15px] text-ink-secondary max-w-2xl mb-8">
         A structured exercise for thinking through the practical challenges of deploying an AI system
-        in a real clinical setting — workflow integration, stakeholder buy-in, monitoring, and safety.
+        in a real clinical setting, covering workflow integration, stakeholder buy-in, monitoring, and safety.
       </p>
       <div class="flex flex-wrap gap-4">
         <a

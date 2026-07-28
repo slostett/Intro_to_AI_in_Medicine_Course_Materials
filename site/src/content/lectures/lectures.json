@@ -209,7 +209,7 @@
       { "label": "None", "url": "" }
     ],
     "supplemental": [],
-    "note": "This was a guest lecture. The slides presented belong to the guest speaker and are proprietary to them, so they are not included here."
+    "note": "This was a guest lecture. The slides presented belong to the guest speaker and are proprietary to them, so they are not included here. If you're reusing these materials for your own course, we encourage you to invite your own guest speaker for this session, or to fill it with a special topic of your own choosing."
   },
   {
     "number": 11,
@@ -321,7 +321,8 @@
     "supplemental": [
       { "label": "LLM Interpretability", "url": "https://aclanthology.org/2024.acl-long.470.pdf" }
     ],
-    "note": "This lecture's topic was changed by student popular demand to a discussion of the residency match algorithm (ERAS). For that reason, slides for this lecture are not included here."
+    "note": "This lecture's topic was changed by student popular demand to a discussion of the residency match algorithm (ERAS). For that reason, slides for this lecture are not included here.",
+    "summary": "Instead, the class held an in-depth discussion of the ERAS residency matching algorithm: how applicant and program rank lists are combined by a stable-matching (deferred-acceptance) procedure to produce the annual Match results, why that procedure guarantees applicant-optimal outcomes, and what a real, high-stakes algorithm that directly affects each student's career reveals about trusting and designing automated decision systems more broadly."
   },
   {
     "number": 17,
@@ -332,7 +333,7 @@
     "clinicalCorrelate": [],
     "assignments": [],
     "supplemental": [],
-    "note": "This was a guest lecture. The slides presented belong to the guest speaker and are proprietary to them, so they are not included here."
+    "note": "This was a guest lecture. The slides presented belong to the guest speaker and are proprietary to them, so they are not included here. If you're reusing these materials for your own course, we encourage you to invite your own guest speaker for this session, or to fill it with a special topic of your own choosing."
   },
   {
     "number": 18,
@@ -363,7 +364,7 @@
     ],
     "assignments": [],
     "supplemental": [],
-    "note": "This was a guest lecture. The slides presented belong to the guest speaker and are proprietary to them, so they are not included here."
+    "note": "This was a guest lecture. The slides presented belong to the guest speaker and are proprietary to them, so they are not included here. If you're reusing these materials for your own course, we encourage you to invite your own guest speaker for this session, or to fill it with a special topic of your own choosing."
   },
   {
     "number": 20,
@@ -391,10 +392,11 @@
     "number": 22,
     "title": "Project Discussion",
     "topics": [
-      "Project Due midnight before — project discussion"
+      "Project due at midnight the night before; today's session is project discussion"
     ],
     "clinicalCorrelate": [],
     "assignments": [],
-    "supplemental": []
+    "supplemental": [],
+    "summary": "With final projects due at midnight the night before, this closing session was set aside for students to present and discuss their capstone AI interventions with peers and course faculty, covering each project's clinical rationale, technical approach, and evaluation plan. The last portion of class was reserved for open student feedback on the course as a whole."
   }
 ]
