@@ -33,8 +33,36 @@ const lectureCount = lectures.length;
     </div>
   </section>
 
-  <!-- At a glance -->
+  <!-- Background -->
   <section class="section-band-alt">
+    <div class="content-col reveal-on-scroll">
+      <p class="section-label">Background</p>
+      <h2>Why this course exists</h2>
+      <div class="mt-10 max-w-2xl space-y-6 text-[17px] text-ink-secondary leading-relaxed">
+        <p>
+          FDA-cleared AI and machine learning medical devices grew from 29 in 2017 to more than 690 by 2023, and 66%
+          of physicians reported using health AI in 2024, up from 38% just a year earlier. Medical school curricula
+          have not kept pace: most existing AI content in undergraduate medical education raises awareness of these
+          tools without building the technical competency needed to critically evaluate them.
+        </p>
+        <p>
+          The educational options that do go deeper are largely out of reach. Executive certificate programs at
+          places like Harvard Medical School and MIT Sloan cost thousands of dollars and sit outside the required
+          curriculum, and students at community-based or resource-limited programs often have far fewer
+          opportunities than those at large research institutions. That leaves most students choosing between
+          expensive extracurricular training and cursory in-house coverage, neither of which prepares them to
+          critically evaluate, safely implement, or help build the AI systems they will encounter in practice.
+        </p>
+        <p>
+          This course was built to close that gap: a free, open-source curriculum that starts from first
+          principles and requires nothing beyond standard premedical math.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- At a glance -->
+  <section class="section-band">
     <div class="content-col reveal-on-scroll">
       <p class="section-label">At a Glance</p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mt-12">
@@ -55,7 +83,7 @@ const lectureCount = lectures.length;
   </section>
 
   <!-- Pedagogical approach -->
-  <section class="section-band">
+  <section class="section-band-alt">
     <div class="content-col reveal-on-scroll">
       <p class="section-label">Approach</p>
       <h2>Build the technical understanding<br/>to be a leader in AI</h2>
@@ -78,7 +106,7 @@ const lectureCount = lectures.length;
   </section>
 
   <!-- Pillars diagram -->
-  <section class="section-band-alt">
+  <section class="section-band">
     <div class="content-col reveal-on-scroll">
       <p class="section-label">Framework</p>
       <h2>Four Pillars of AI in Medicine</h2>
@@ -104,6 +132,154 @@ const lectureCount = lectures.length;
           Diagram (Filled) ↗
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- Methodology -->
+  <section class="section-band-alt">
+    <div class="content-col reveal-on-scroll">
+      <p class="section-label">Methodology</p>
+      <h2>How the pilot was run</h2>
+      <div class="mt-10 max-w-2xl space-y-6 text-[17px] text-ink-secondary leading-relaxed">
+        <p>
+          The course was piloted as a 20-session, one-credit elective for fourth-year medical students at the
+          University of North Carolina at Chapel Hill School of Medicine in Fall 2025, meeting twice weekly for an
+          hour in the evening from September to November so that students on rotations or away could still attend.
+          Twenty students enrolled for credit, with several others auditing.
+        </p>
+        <p>
+          Guest lecturers included UNC Hospitals' Director of Cardiovascular Artificial Intelligence Research, a
+          venture capital expert from the Wharton School, and a clinical AI developer from Doximity. One session
+          was run as an AI rollout simulation, where students rotated through stations with a practicing clinician,
+          an industry AI developer, and a standardized patient, practicing how to raise and respond to concerns
+          about a new AI tool from each stakeholder's perspective.
+        </p>
+        <p>
+          To measure the course's effect, students completed an anonymous Likert-scale survey before and after the
+          course, covering eight items on AI knowledge, confidence, and attitudes toward bias and literature
+          evaluation. Because the pre- and post-course groups were small and unequal in size (9 and 13
+          respondents), Mann-Whitney U tests were used to assess whether the observed shifts were statistically
+          significant.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Survey outcomes -->
+  <section class="section-band">
+    <div class="content-col reveal-on-scroll">
+      <p class="section-label">Survey Outcomes</p>
+      <h2>Measurable gains in confidence</h2>
+      <p class="mt-6 text-[17px] text-ink-secondary max-w-2xl leading-relaxed">
+        All eight survey items improved from pre- to post-course, and every improvement was statistically
+        significant (p &lt; 0.05).
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mt-12">
+        <div>
+          <p class="text-3xl font-semibold text-ink tabular-nums tracking-tighter">90.9%</p>
+          <p class="mt-2 text-[15px] text-ink-secondary">
+            of students agreed or strongly agreed they could answer basic AI questions from colleagues, up from a
+            baseline where 88% were neutral, disagreed, or strongly disagreed
+          </p>
+        </div>
+        <div>
+          <p class="text-3xl font-semibold text-ink tabular-nums tracking-tighter">81%</p>
+          <p class="mt-2 text-[15px] text-ink-secondary">
+            reported feeling comfortable critically reading medical AI literature after the course
+          </p>
+        </div>
+        <div>
+          <p class="text-3xl font-semibold text-ink tabular-nums tracking-tighter">80%</p>
+          <p class="mt-2 text-[15px] text-ink-secondary">
+            positive shift in comfort investigating bias in AI systems, despite the course's mathematical rigor
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-16 overflow-x-auto">
+        <table class="w-full text-left text-[15px] border-collapse min-w-[640px]">
+          <thead>
+            <tr class="border-b border-rule">
+              <th class="py-3 pr-4 font-medium text-ink-secondary">Survey Item</th>
+              <th class="py-3 px-4 font-medium text-ink-secondary text-center">Pre Median</th>
+              <th class="py-3 px-4 font-medium text-ink-secondary text-center">Post Median</th>
+              <th class="py-3 pl-4 font-medium text-ink-secondary text-center">p-value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-rule">
+              <td class="py-3 pr-4 text-ink-secondary">I know what AI is</td>
+              <td class="py-3 px-4 text-center tabular-nums text-ink">4</td>
+              <td class="py-3 px-4 text-center tabular-nums text-ink">4</td>
+              <td class="py-3 pl-4 text-center tabular-nums text-ink">0.029</td>
+            </tr>
+            <tr class="border-b border-rule">
+              <td class="py-3 pr-4 text-ink-secondary">
+                When a new AI technology comes out, I feel like I have the knowledge to understand how it works
+                myself
+              </td>
+              <td class="py-3 px-4 text-center tabular-nums text-ink">3</td>
+              <td class="py-3 px-4 text-center tabular-nums text-ink">4</td>
+              <td class="py-3 pl-4 text-center tabular-nums text-ink">0.002</td>
+            </tr>
+            <tr class="border-b border-rule">
+              <td class="py-3 pr-4 text-ink-secondary">
+                Knowing the math behind AI is helpful to know how a given AI system works
+              </td>
+              <td class="py-3 px-4 text-center tabular-nums text-ink">3</td>
+              <td class="py-3 px-4 text-center tabular-nums text-ink">4</td>
+              <td class="py-3 pl-4 text-center tabular-nums text-ink">0.029</td>
+            </tr>
+            <tr class="border-b border-rule">
+              <td class="py-3 pr-4 text-ink-secondary">
+                I feel like I could answer basic questions about AI if asked by my medical colleagues
+              </td>
+              <td class="py-3 px-4 text-center tabular-nums text-ink">3</td>
+              <td class="py-3 px-4 text-center tabular-nums text-ink">4</td>
+              <td class="py-3 pl-4 text-center tabular-nums text-ink">0.003</td>
+            </tr>
+            <tr class="border-b border-rule">
+              <td class="py-3 pr-4 text-ink-secondary">
+                I feel like I could answer basic questions about AI if asked by computer scientists
+              </td>
+              <td class="py-3 px-4 text-center tabular-nums text-ink">2</td>
+              <td class="py-3 px-4 text-center tabular-nums text-ink">3</td>
+              <td class="py-3 pl-4 text-center tabular-nums text-ink">0.003</td>
+            </tr>
+            <tr class="border-b border-rule">
+              <td class="py-3 pr-4 text-ink-secondary">
+                I feel like I could lead a team to develop my own AI intervention if I had an idea for one
+              </td>
+              <td class="py-3 px-4 text-center tabular-nums text-ink">1</td>
+              <td class="py-3 px-4 text-center tabular-nums text-ink">4</td>
+              <td class="py-3 pl-4 text-center tabular-nums text-ink">&lt;0.001</td>
+            </tr>
+            <tr class="border-b border-rule">
+              <td class="py-3 pr-4 text-ink-secondary">
+                I feel comfortable investigating how AI systems might be biased toward certain outcomes
+              </td>
+              <td class="py-3 px-4 text-center tabular-nums text-ink">2</td>
+              <td class="py-3 px-4 text-center tabular-nums text-ink">4</td>
+              <td class="py-3 pl-4 text-center tabular-nums text-ink">&lt;0.001</td>
+            </tr>
+            <tr class="border-b border-rule">
+              <td class="py-3 pr-4 text-ink-secondary">I feel comfortable critically reading medical AI literature</td>
+              <td class="py-3 px-4 text-center tabular-nums text-ink">3</td>
+              <td class="py-3 px-4 text-center tabular-nums text-ink">4</td>
+              <td class="py-3 pl-4 text-center tabular-nums text-ink">0.009</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="mt-3 text-xs text-ink-secondary">
+          Median Likert scores (1–5 scale), pre-course n=9, post-course n=13. Significance assessed with the
+          Mann-Whitney U test.
+        </p>
+      </div>
+
+      <p class="mt-10 text-[17px] text-ink-secondary max-w-2xl leading-relaxed">
+        This was a pilot with a small number of survey respondents, and the course will continue to be taught and
+        refined in future semesters with a larger cohort.
+      </p>
     </div>
   </section>
 
