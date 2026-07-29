@@ -96,7 +96,7 @@ These materials are intended for educational use. They may be reused or adapted 
 
 ## Contact
 
-For questions about the course or materials, please contact stephenlostetter@yahoo.com.
+For questions about the course or materials, please contact stephen ' at ' happyrank.org.
 
 ---
 ## Works Cited
